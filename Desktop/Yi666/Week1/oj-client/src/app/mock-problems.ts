@@ -1,9 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { Problem } from '../../models/problem.model';
-import { DataService } from '../../services/data.service';
-/*
-const PROBLEMS: Problem[] = [
- {
+import { Problem } from '/home/yi/Desktop/Yi666/Week1/oj-client/src/app/models/problem.model';
+
+export const PROBLEMS: Problem[] = [
+{
  "id":1,
  "name":"Two Sum",
  "desc":"Given an array of integers, find two numbers such that they add up to a specific target number.\n\nThe function twoSum should return indices of the two numbers such that they add up to the target, where index1 must be less than index2. Please note that your returned answers (both index1 and index2) are NOT zero-based.",
@@ -33,24 +31,3 @@ const PROBLEMS: Problem[] = [
  "desc":"Given an array of n integer with duplicate number, and a moving window(size k), move the window at each iteration from the start of the array, find the maximum number inside the window at each moving.",
  "difficulty":"super"
 }];
-*/
-
-@Component({
-  selector: 'app-problem-list',
-  templateUrl: './problem-list.component.html',
-  styleUrls: ['./problem-list.component.css']
-})
-export class ProblemListComponent implements OnInit {
-  problems: Problem[];
-
-  constructor(private dataService: DataService) { }
-
-  ngOnInit() {
-    this.getProblems();
-  }
-
-  getProblems() {
-    this.problems = this.dataService.getProblems();
-  }
-
-}

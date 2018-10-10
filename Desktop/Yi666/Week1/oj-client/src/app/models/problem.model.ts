@@ -3,5 +3,4 @@ export class Problem {
 	name: string;
 	desc: string;
 	difficulty: string;
-
 }
