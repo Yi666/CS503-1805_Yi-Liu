@@ -1,1 +1,2 @@
-# CS503-1805_Yi-Liu
+# CS503-1805
+Including JavaScript Project Data Processing Platform and Online collaborative system.
